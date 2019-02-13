@@ -5,6 +5,14 @@ RESET
 v2.0b1 | 201101 
 NOTE:WORK IN PROGRESS
 USE WITH CAUTION AND TEST WITH ABANDON */
+/* Your Code Goes Here */
+/*------------------------------------*\
+RESET
+\*------------------------------------*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+v2.0b1 | 201101 
+NOTE:WORK IN PROGRESS
+USE WITH CAUTION AND TEST WITH ABANDON */
 html,
 body,
 div,
@@ -158,8 +166,9 @@ h3 {
   color: #222222;
 }
 h2 {
-  font-size: 2.8rem;
+  font-size: 2.5rem;
   color: #222222;
+  letter-spacing: 0.6rem;
 }
 h4 {
   font-size: 2rem;
@@ -180,16 +189,27 @@ p {
   width: 100%;
   margin: 0 auto;
 }
-.header {
-  background-color: #97A2AD;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  height: 47px;
-  padding: 12px 8%;
+@media (max-width: 500px) {
+  .container-home {
+    max-width: 480px;
+    width: 100%;
+    margin: 0 auto;
+    border: 1px solid red;
+  }
+}
+@media (max-width: 500px) {
+  .navLogo {
+    font-size: 2.8rem;
+  }
 }
 .navUnopened {
   height: 20px;
+}
+@media (max-width: 500px) {
+  .navUnopened {
+    height: 30px;
+    width: 10%;
+  }
 }
 nav a {
   font-weight: bold;
@@ -199,13 +219,83 @@ nav a {
 nav a a:hover {
   color: #222222;
 }
+.footer {
+  background-color: #97A2AD;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 50px;
+  height: 230px;
+  border: 1px solid red;
+}
+input {
+  height: 43px;
+  border-radius: 5.5px;
+  width: 90%;
+  color: #97A2AD;
+  font-size: 16px;
+}
+.footer .formBlock {
+  width: 30%;
+  border: 1px solid red;
+  padding-top: 60px;
+  margin-left: 4%;
+}
+.footer .address {
+  width: 15%;
+  border: 1px solid red;
+  padding-top: 60px;
+  margin-right: 4%;
+}
+.address .addressP,
+.formBlock .form {
+  font-size: 1.4rem;
+  line-height: 26px;
+  color: #ffffff;
+}
+.copyright {
+  display: flex;
+  justify-content: center;
+  background-color: #97a2ad;
+}
+.copyright .copyR {
+  font-size: 1.1rem;
+  color: #ffffff;
+}
+.header {
+  background-color: #97A2AD;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 47px;
+  padding: 12px 8%;
+}
+@media (max-width: 500px) {
+  .header {
+    max-width: 480px;
+    width: 85%;
+    border: 1px solid red;
+    background-color: black;
+    height: 60px;
+    align-self: center;
+    margin: 0 auto;
+  }
+}
 .headImg {
   height: 550px;
   width: 100%;
 }
+@media (max-width: 500px) {
+  .headImg {
+    width: 80%;
+    height: 250px;
+    margin: 0 auto;
+    display: block;
+    border: 1px solid red;
+  }
+}
 div .midSectContainer {
   max-width: 850px;
-  border: 1px solid red;
   width: 100%;
   margin: 0 auto;
 }
@@ -213,46 +303,45 @@ div .midSectContainer {
   display: flex;
   flex-direction: row;
   width: 100%;
-  border: 1px solid red;
 }
 .midSect-Articles .articlesContent {
   width: 50%;
   padding-top: 45px;
   margin-right: 2%;
-  border: 1px solid blue;
 }
 .midSect-Articles .midSectImg {
   width: 48%;
-  border: 1px solid blue;
 }
 .articlesContent .pMidsect {
   margin-top: 25px;
+  margin-bottom: 27px;
 }
 .midSect-Articles2 {
   display: flex;
   flex-direction: row;
   width: 100%;
-  border: 1px solid red;
   margin-top: 95px;
 }
 .midSect-Articles2 .articlesContent2 {
   width: 50%;
   padding-top: 40px;
   margin-right: 0;
-  border: 1px solid blue;
   padding-left: 15px;
 }
 .midSect-Articles2 .midSectImg2 {
-  width: 48%;
+  width: 55%;
   margin-right: 2%;
-  border: 1px solid blue;
 }
 .articlesContent2 .pMidsect {
-  margin-top: 25px;
-  margin-bottom: 22px;
+  margin-top: 21px;
+  margin-bottom: 27px;
 }
 button {
   border: 1px solid black;
+  width: 35%;
+  height: 45px;
+  background: #ffffff;
+  font-size: 1.6rem;
 }
 .recentProjects {
   margin-top: 95px;
@@ -260,15 +349,54 @@ button {
 .projectsImg {
   margin-top: 45px;
   width: 99.8%;
+  z-index: -1;
 }
-.rpHeaders {
+.recentProjects .rpHeaders1 {
   background-color: #D8D8D8;
-  width: 40%;
-  height: 85px;
+  width: 37%;
+  height: 90px;
+  padding-top: 3.7%;
+  padding-bottom: 3.7;
+  padding-left: 7.7%;
+  margin-left: 63%;
+  margin-top: -52px;
+  position: relative;
+  z-index: 2;
 }
-p .addressP {
-  font-size: 1.4rem;
-  line-height: 26px;
-  color: #ffffff;
+.recentProjects .rpHeaders2 {
+  background-color: #D8D8D8;
+  width: 37%;
+  height: 90px;
+  padding-top: 3.7%;
+  padding-bottom: 3.7;
+  padding-left: 7.7%;
+  position: relative;
+  margin-top: -54px;
 }
-/* Your Code Goes Here */
+.recentProjects .rpHeaders3 {
+  background-color: #D8D8D8;
+  width: 37%;
+  height: 90px;
+  padding-top: 3.7%;
+  padding-bottom: 3.7;
+  padding-left: 7.7%;
+  margin-left: 63%;
+  margin-top: -54px;
+  position: relative;
+}
+.recentProjects .parDivs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pProjects1 {
+  margin-top: 55px;
+  width: 50%;
+  font-size: 1.7rem;
+}
+.pProjects2 {
+  margin-top: 22px;
+  width: 50%;
+  margin-bottom: 50px;
+  font-size: 1.7rem;
+}
