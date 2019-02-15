@@ -11,21 +11,22 @@
   body {
     font-family: Roboto, Arial, sans-serif;
   }
-  
+
   h1{
     font-weight: bold;
     font-size: 6.4rem;
     line-height: 75px;
-    color: #ffffff; 
-    margin-top: -275px;
-    margin-bottom: 100px;
-    margin-left: 8%;
+    color: black;
   }
-  
+
    h3{
     font-weight: bold;
     font-size: 2.4rem;
     color: #222222;
+
+    @media @mobile {
+      font-size: 2.6rem;
+    }
   }
   
   h2{
@@ -38,6 +39,7 @@
     font-size: 2rem;
     line-height: 24px;
     color: #ffffff;
+
   }
   
   h5{
@@ -56,6 +58,7 @@
     max-width: 1020px;
     width: 100%;
     margin: 0 auto; 
+    .border();
 
     @media @mobile {
       max-width: 480px;
@@ -67,3 +70,5 @@
     }
     
   }
+
+  
