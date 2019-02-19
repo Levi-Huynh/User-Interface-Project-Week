@@ -190,14 +190,12 @@ p {
   max-width: 1020px;
   width: 100%;
   margin: 0 auto;
-  border: 1px solid red;
 }
 @media (max-width: 500px) {
   .container-home {
     max-width: 480px;
     width: 100%;
     margin: 0 auto;
-    border: 1px solid red;
   }
 }
 @media (max-width: 500px) {
@@ -205,134 +203,41 @@ p {
     font-size: 2.8rem;
   }
 }
-.navUnopened {
-  height: 20px;
+.navMenu {
+  display: none;
+  position: fixed;
+  margin: 0 auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  max-width: 1020px;
+  width: 100%;
+  height: 100vh;
+  background-color: #9AA6B0;
+  z-index: 3;
 }
-@media (max-width: 500px) {
-  .navUnopened {
-    height: 30px;
-    width: 10%;
-  }
-}
-nav a {
+.navMenu .a-link {
   font-weight: bold;
-  font-size: 48px;
-  line-height: 85px;
-}
-nav a a:hover {
-  color: #222222;
-}
-.footer {
-  background-color: #97A2AD;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  margin-top: 50px;
-  height: 230px;
-}
-@media (max-width: 500px) {
-  .footer {
-    max-width: 380px;
-    flex-direction: column;
-    align-items: center;
-    align-content: flex-start;
-    background-color: #97A2AD;
-    margin: 0 auto;
-    margin-top: 80px;
-    border: 2px solid green;
-    height: 900px;
-    padding-bottom: 0;
-  }
-}
-.footer .formBlock {
-  width: 30%;
-  border: 1px solid blue;
-  padding-top: 60px;
-  margin-left: 4%;
-}
-@media (max-width: 500px) {
-  .footer .formBlock {
-    width: 98%;
-    padding-top: 0;
-    padding-left: 2%;
-    margin: 0 auto;
-    display: block;
-    height: 180px;
-    margin-top: -250px;
-    margin-bottom: 0;
-  }
-}
-.footer .address {
-  width: 15%;
-  border: 1px solid blue;
-  padding-top: 60px;
-  margin-right: 4%;
-}
-@media (max-width: 500px) {
-  .footer .address {
-    width: 98%;
-    padding-top: 0px;
-    margin-top: -240px;
-    border: 1px solid red;
-    margin-bottom: 15px;
-  }
-}
-@media (max-width: 500px) {
-  .formBlock .hfooter,
-  .address .hfooter {
-    font-size: 2.5rem;
-    color: black;
-    font-weight: bold;
-    line-height: 26px;
-  }
-}
-.address .addressP,
-.formBlock .form {
-  font-size: 1.4rem;
-  line-height: 27px;
+  font-size: 5rem;
+  line-height: 75px;
   color: #ffffff;
+  text-decoration: none;
+  text-align: left;
 }
-@media (max-width: 500px) {
+.navMenu .a-link:hover {
+  color: #504545;
 }
-input {
-  height: 43px;
-  border-radius: 5.5px;
-  width: 90%;
-  color: #97A2AD;
-  font-size: 16px;
+.menu--open {
+  display: block;
+  opacity: 0.8;
 }
-@media (max-width: 500px) {
-  input {
-    border: 1px solid red;
-    margin-top: 35px;
-    height: 58px;
-  }
-}
-.copyright {
+div .anchor-content {
   display: flex;
-  justify-content: center;
-  background-color: #97a2ad;
-}
-@media (max-width: 500px) {
-  .copyright {
-    max-width: 380px;
-    margin: 0 auto;
-    border: 1px solid purple;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-  }
-}
-.copyright .copyR {
-  font-size: 1.1rem;
-  color: #ffffff;
-}
-@media (max-width: 500px) {
-  .copyright .copyR {
-    border: 1px solid red;
-    margin-top: -120px;
-    font-size: 1.4rem;
-  }
+  flex-direction: column;
+  text-align: left;
+  padding-left: 42%;
+  margin-top: 135px;
 }
 .header {
   background-color: #97A2AD;
@@ -346,7 +251,6 @@ input {
   .header {
     max-width: 480px;
     width: 85%;
-    border: 1px solid red;
     height: 60px;
     align-self: center;
     margin: 0 auto;
@@ -379,18 +283,122 @@ input {
     height: 250px;
     margin: 0 auto;
     display: block;
-    border: 1px solid red;
+  }
+}
+.footer {
+  background-color: #97A2AD;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 50px;
+  height: 230px;
+}
+@media (max-width: 500px) {
+  .footer {
+    max-width: 380px;
+    flex-direction: column;
+    align-items: center;
+    align-content: flex-start;
+    background-color: #818181;
+    margin: 0 auto;
+    margin-top: 80px;
+    height: 900px;
+    padding-bottom: 0;
+  }
+}
+.footer .formBlock {
+  width: 30%;
+  padding-top: 60px;
+  margin-left: 4%;
+}
+@media (max-width: 500px) {
+  .footer .formBlock {
+    width: 98%;
+    padding-top: 0;
+    padding-left: 2%;
+    margin: 0 auto;
+    display: block;
+    height: 180px;
+    margin-top: -250px;
+    margin-bottom: 0;
+  }
+}
+.footer .address {
+  width: 15%;
+  padding-top: 60px;
+  margin-right: 4%;
+}
+@media (max-width: 500px) {
+  .footer .address {
+    width: 98%;
+    padding-top: 0px;
+    padding-left: 4%;
+    margin-top: -240px;
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 500px) {
+  .formBlock .hfooter,
+  .address .hfooter {
+    font-size: 2.5rem;
+    color: #ffffff;
+    font-weight: bold;
+    line-height: 26px;
+  }
+}
+.address .addressP,
+.formBlock .form {
+  font-size: 1.4rem;
+  line-height: 27px;
+  color: #ffffff;
+}
+@media (max-width: 500px) {
+}
+input {
+  height: 43px;
+  border-radius: 5.5px;
+  width: 90%;
+  color: #97A2AD;
+  font-size: 16px;
+}
+@media (max-width: 500px) {
+  input {
+    margin-top: 35px;
+    height: 58px;
+  }
+}
+.copyright {
+  display: flex;
+  justify-content: center;
+  background-color: #97a2ad;
+}
+@media (max-width: 500px) {
+  .copyright {
+    max-width: 380px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-left: 4%;
+  }
+}
+.copyright .copyR {
+  font-size: 1.1rem;
+  color: #ffffff;
+}
+@media (max-width: 500px) {
+  .copyright .copyR {
+    margin-top: -120px;
+    font-size: 1.4rem;
   }
 }
 div .midSectContainer {
   max-width: 850px;
   width: 100%;
   margin: 0 auto;
-  border: 2px solid green;
 }
 @media (max-width: 500px) {
   div .midSectContainer {
-    border: 1px solid red;
     max-width: 380px;
     width: 80%;
     margin-top: -30px;
@@ -404,7 +412,6 @@ div .midSectContainer {
 @media (max-width: 500px) {
   .midSect-Articles {
     flex-direction: column-reverse;
-    border: 1px solid blue;
   }
 }
 .midSect-Articles .articlesContent {
@@ -427,7 +434,6 @@ div .midSectContainer {
     width: 95%;
     height: 330px;
     margin: 0 auto;
-    border: 1px solid red;
   }
 }
 .articlesContent .pMidsect {
@@ -468,7 +474,6 @@ div .midSectContainer {
 @media (max-width: 500px) {
   .midSect-Articles2 .midSectImg2 {
     width: 95%;
-    border: 1px solid red;
     display: block;
     margin: 0 auto;
     height: 330px;
@@ -514,7 +519,6 @@ button {
 }
 @media (max-width: 500px) {
   .projectsImg1 {
-    border: 1px solid red;
     height: 240px;
     margin: 0 auto;
     display: block;
@@ -529,7 +533,6 @@ button {
 }
 @media (max-width: 500px) {
   .projectsImg2 {
-    border: 1px solid red;
     height: 240px;
     margin: 0 auto;
     display: block;
@@ -544,7 +547,6 @@ button {
 }
 @media (max-width: 500px) {
   .projectsImg3 {
-    border: 1px solid red;
     height: 240px;
     margin: 0 auto;
     display: block;
@@ -562,11 +564,10 @@ button {
   margin-left: 63%;
   margin-top: -52px;
   position: relative;
-  z-index: 2;
+  z-index: 1;
 }
 @media (max-width: 500px) {
   .recentProjects .rpHeaders1 {
-    border: 1px solid red;
     width: 90%;
     margin: 0 auto;
     margin-top: -18px;
@@ -591,7 +592,6 @@ button {
 }
 @media (max-width: 500px) {
   .recentProjects .rpHeaders2 {
-    border: 1px solid red;
     width: 90%;
     margin: 0 auto;
     margin-top: -7px;
@@ -617,7 +617,6 @@ button {
 }
 @media (max-width: 500px) {
   .recentProjects .rpHeaders3 {
-    border: 1px solid red;
     width: 90%;
     margin: 0 auto;
     margin-top: -15px;
@@ -661,7 +660,6 @@ button {
   }
 }
 .svcHead .servicesJumbo {
-  border: 1px solid red;
   width: 100%;
   height: 200px;
 }
@@ -676,13 +674,16 @@ button {
   flex-direction: row;
   justify-content: space-between;
 }
-.tabs-link {
+.tabs .tabs-link {
   width: 21.5%;
   margin-top: 50px;
   background-color: #ffffff;
 }
 .tabs .tabs-link:hover {
   background-color: grey;
+}
+.tabs .tabs-link-selected {
+  background-color: #609CB7;
 }
 .tabs-item {
   display: none;
@@ -699,12 +700,10 @@ button {
 .tabs-items .descriptionImgContainer {
   display: flex;
   flex-direction: row;
-  border: 2px solid purple;
 }
 .tabs-item-description {
   width: 45%;
   margin-top: 20px;
-  border: 1px solid red;
   margin-right: 10%;
 }
 .tabs-items .Pre-Construction,
