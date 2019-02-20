@@ -21,15 +21,10 @@ class TabLink {
         //all links has tabs-link-selected removed from it 
         // Array.from(links).forEach(link => link.classList.remove('tabs-link-selected'));
         links.forEach(link => link.classList.remove('tabs-link-selected'));
-        for (var i=0; i<links.length-1; i++) {
-            if(links[i].background-color==='#609CB7') {
-                links[i].background-color==='#ffffff';
-            }
-            else {
-                links[i].background-color=='#ffffff';
-            }
-           }
+    
         this.element.classList.add('tabs-link-selected');
+        this.element.style.backgroundColor="#609CB7";
+        
         
         // this.element.style.backgroundColor="#609CB7";
         //this.tabItem= new TabItem(this.elementItem)(*corresponding/matching tabItem 
@@ -55,6 +50,8 @@ class TabItem {
     // Array.from(items).forEach(item => item.classlist.remove('tabs-item-selected'));
            //variable passed through & binded to TabItem has the class added to it.  
         this.element.classList.add('tabs-item-selected');
+     
+
     }
 
 }

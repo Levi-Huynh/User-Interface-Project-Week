@@ -673,17 +673,15 @@ button {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  background-color: #ffffff;
 }
-.tabs .tabs-link {
+.tabs-link {
   width: 21.5%;
   margin-top: 50px;
   background-color: #ffffff;
 }
 .tabs .tabs-link:hover {
   background-color: grey;
-}
-.tabs .tabs-link-selected {
-  background-color: #609CB7;
 }
 .tabs-item {
   display: none;
