@@ -16,14 +16,14 @@ class TabLink {
     };
 
     select() {
-        const links = document.querySelectorAll('tabs-link');
+        const links = document.querySelectorAll('.tabs-link');
         // const links = document.querySelectorAll('.tabs-link')
         //all links has tabs-link-selected removed from it 
         // Array.from(links).forEach(link => link.classList.remove('tabs-link-selected'));
         links.forEach(link => link.classList.remove('tabs-link-selected'));
     
         this.element.classList.add('tabs-link-selected');
-        this.element.style.backgroundColor="#609CB7";
+        // this.element.style.backgroundColor="#609CB7";
         
         
         // this.element.style.backgroundColor="#609CB7";

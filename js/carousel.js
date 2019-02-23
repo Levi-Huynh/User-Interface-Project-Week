@@ -3,7 +3,7 @@ class Carousel {
       this.carousel= carousel;
       this.leftB = this.carousel.querySelector('.left-button');
       this.rightB = this.carousel.querySelector('.right-button');
-      this.img = this.carousel.querySelectorAll('img');
+      this.img = this.carousel.querySelectorAll('.carouselImg');
       console.log(this.leftB);
       console.log(this.rightB);
       console.log(this.img);
