@@ -1,0 +1,135 @@
+//footer
+.footer{
+    background-color: #97A2AD;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    // align-items: center;
+    // align-content: center;
+    margin-top: 50px;
+    height: 230px;
+   
+  
+
+    @media @mobile {
+      max-width: 380px;
+      flex-direction: column;
+      align-items: center;
+      align-content: flex-start;
+      background-color: #818181;
+      margin: 0 auto;
+      margin-top: 80px;
+      // border: 2px solid green;
+      height: 900px;
+      padding-bottom: 0;
+    }
+  }
+  
+
+  //form div
+  
+  .footer .formBlock{
+    width: 30%;
+    // border: 1px solid blue;
+    padding-top: 60px;
+    margin-left: 4%;
+
+    @media @mobile {
+     width: 98%; 
+     padding-top: 0;
+     padding-left: 2%;
+     margin: 0 auto;
+     display: block; 
+     height: 180px;
+     margin-top: -250px;
+     margin-bottom: 0;
+    //  align-self: center;
+    }
+  }
+  
+//address div
+  .footer .address{
+    width: 15%;
+    // border: 1px solid blue;
+    padding-top: 60px;
+    margin-right: 4%;
+
+    @media @mobile {
+      width: 98%; 
+      padding-top: 0px;
+      padding-left: 4%;
+       margin-top:-240px;
+      // .border();
+      margin-bottom: 15px;
+     }
+  }
+
+
+
+  //address header h4 & form Header h4
+.formBlock .hfooter, .address .hfooter{
+  
+  @media @mobile {
+    font-size: 2.5rem;
+    color:#ffffff;
+    font-weight: bold;
+    line-height: 26px;
+  }
+}
+  
+//address par & form par
+  .address .addressP, .formBlock .form{
+    font-size: 1.4rem;
+    line-height: 27px;
+    color: #ffffff;
+
+    @media @mobile {
+      // color: black;
+      
+    }
+  }
+  
+    //input feild
+    input{
+      height: 43px;
+      border-radius: 5.5px;
+      width: 90%;
+      color: #97A2AD;
+      font-size: 16px;
+  
+      @media @mobile {
+     
+        margin-top: 35px;
+        height: 58px;
+      }
+    }
+  
+  
+//copyright
+
+.copyright{
+  display: flex;
+  justify-content: center;
+  background-color: #97a2ad;
+
+  @media @mobile {
+    max-width: 380px;
+    margin: 0 auto;
+    // border: 1px solid purple;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-left: 4%;
+  }
+
+}
+.copyright .copyR {
+  font-size: 1.1rem;
+ color:#ffffff;
+
+ @media @mobile {
+  //  .border();
+   margin-top: -120px;
+   font-size: 1.4rem;
+ }
+}
