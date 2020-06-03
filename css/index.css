@@ -27,6 +27,8 @@ This means that the columns become narrower, rather than creating a scrollbar.
 
 -In a responsive design, you can use Flexbox to display items as a single row, 
 or wrapped onto multiple rows as the available space decreases. that decrease horizontal scroll
+the columns automatically rearrange themselves to fit the size of the screen or browser window, based on user's
+browsing 
 
 -Media queries change styles based on the types of device rendering the content, 
 or the features of that device, for example width, height, 
@@ -41,6 +43,12 @@ optimize breakpoints based on content and maintain the least number of breakpoin
 Set the root HTML font-size as a percentage. That’s a percentage of the user’s default browser font-size. A typical method is to set the HTML font-size to 62.5%. That’s because 62.5% of 16px (typical default browser font-size) is 10px. That would still make 1.6rem = 16px. This now means that if the user’s default browser font-size is changed to, for example, 20px, 1.6rem would now equal 20px. So if your user wants bigger fonts, let them. 
 ^^setting root HMTL as % won't override accessiblity if your user wants to chnage the default browser font size.  your rem 
 unit would scale according 
+
+-showing/hiding diff elements based on device width. know your audience
+  -menu is hamburger icon at mobile
+  -form hidden behind larger cta button on mobile
+  -parallax scrolling on mobile 
+
 
 */
 html,
