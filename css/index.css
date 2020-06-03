@@ -240,8 +240,8 @@ div .anchor-content {
   margin-top: 135px;
 }
 .header {
-  background-color: #97A2AD;
   display: flex;
+  background-color: #97A2AD;
   flex-direction: row;
   justify-content: space-between;
   height: 47px;
